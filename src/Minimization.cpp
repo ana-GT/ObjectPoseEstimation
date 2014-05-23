@@ -11,7 +11,9 @@
 #include <cmath>
 #include <ctime>
 #include <pcl/point_types.h>
+#include <pcl/io/pcd_io.h>
 #include <Eigen/Core>
+#include <Eigen/LU>
 
 #include "SQTypes.h"
 #include "Minimization.h"

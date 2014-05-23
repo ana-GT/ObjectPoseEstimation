@@ -53,9 +53,9 @@ template<class T> class PointCloud;
 
 } // pcl
 
-
-class SQParameters;
-
+namespace ope {
+	class SQParameters;
+}
 
 namespace ope {
 

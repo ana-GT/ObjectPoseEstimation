@@ -177,7 +177,7 @@ public:
 			std::cerr << "TableObjectModeler: Invalid cluster!" << std::endl;
 		}
 
-		pcl::PointCloud< PointType >::Ptr tempCloudPtr (new pcl::PointCloud< PointType>);
+		typename pcl::PointCloud< PointType >::Ptr tempCloudPtr (new pcl::PointCloud< PointType>);
 				
 		objectId = clusterId;
 		name = "Object_";
@@ -261,7 +261,7 @@ public:
 			std::cout << ">> Generating object models" << std::endl;
 
 			if (detectedObjects) {
-				std::cout << ">>\t " << detector.objectClusters().size() << " object(s) detected" << endl;
+				std::cout << ">>\t " << detector.objectClusters().size() << " object(s) detected" << std::endl;
 			} else {
 				std::cout << ">>\t " << "No objects were detected" << std::endl;
 			}
@@ -292,7 +292,7 @@ public:
 
 		return objectBoxes;
 	}
-	
+	bool detectedObjects;
 }; // ObjectModelGenerator
 
 

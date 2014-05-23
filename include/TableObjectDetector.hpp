@@ -173,7 +173,7 @@ bool TableObjectDetector<PointType> :: detect(PointCloudConstPtr cloud) {
 	
 	
 	for (size_t i = 0; i < object_clusters.size (); ++i) {
-		std::vector <PointType, Eigen::aligned_allocator<PointType>> object_points;
+		std::vector <PointType, Eigen::aligned_allocator<PointType> > object_points;
 		
 		for (size_t k = 0; k < object_clusters[i].indices.size(); ++k) {
 			int index = object_clusters[i].indices[k];

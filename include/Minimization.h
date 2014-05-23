@@ -39,7 +39,7 @@
 #define MINIMIZATION_H__
 
 //#include <cstdlib>
-
+#include <vector>
 
 ////////////// Forward declarations to avoid large headers ////////////////
 namespace pcl {
@@ -48,7 +48,9 @@ namespace pcl {
 
 } // pcl
 
-class SQParameters;
+namespace ope {
+	class SQParameters;
+}
 
 //////////////////////////////////////////////////////////////////////////
 
